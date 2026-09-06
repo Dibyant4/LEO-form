@@ -385,12 +385,12 @@
         <div class="field-row">
           <div class="field" data-required>
             <label for="fullName">Full name<span class="req">*</span></label>
-            <input type="text" id="fullName" name="fullName" placeholder="e.g. Anisha Rai">
+            <input type="text" id="fullName" name="fi-sender-fullName" placeholder="e.g. Anisha Rai">
             <div class="error-msg">Please enter your full name.</div>
           </div>
           <div class="field" data-required>
             <label for="dob">Date of birth<span class="req">*</span></label>
-            <input type="date" id="dob" name="dob">
+            <input type="date" id="dob" name="fi-date-dob">
             <div class="error-msg">Please select your date of birth.</div>
           </div>
         </div>
@@ -398,7 +398,7 @@
         <div class="field-row">
           <div class="field" data-required>
             <label for="gender">Gender<span class="req">*</span></label>
-            <select id="gender" name="gender">
+            <select id="gender" name="fi-select-gender">
               <option value="" selected disabled>Select one</option>
               <option>Woman</option>
               <option>Man</option>
@@ -410,7 +410,7 @@
           </div>
           <div class="field" data-required>
             <label for="phone">Phone / WhatsApp number<span class="req">*</span></label>
-            <input type="tel" id="phone" name="phone" placeholder="98XXXXXXXX">
+            <input type="tel" id="phone" name="fi-text-phone" placeholder="98XXXXXXXX">
             <div class="error-msg">Please enter a valid phone number.</div>
           </div>
         </div>
@@ -418,12 +418,12 @@
         <div class="field-row">
           <div class="field" data-required>
             <label for="email">Email address<span class="req">*</span></label>
-            <input type="email" id="email" name="email" placeholder="you@example.com">
+            <input type="email" id="email" name="fi-sender-email" placeholder="you@example.com">
             <div class="error-msg">Please enter a valid email address.</div>
           </div>
           <div class="field" data-required>
             <label for="address">Address<span class="req">*</span></label>
-            <input type="text" id="address" name="address" placeholder="Ward, municipality, district">
+            <input type="text" id="address" name="fi-sender-address" placeholder="Ward, municipality, district">
             <div class="error-msg">Please enter your address.</div>
           </div>
         </div>
@@ -440,18 +440,18 @@
         <div class="field-row">
           <div class="field" data-required>
             <label for="school">School / college / organisation<span class="req">*</span></label>
-            <input type="text" id="school" name="school" placeholder="e.g. Islington College">
+            <input type="text" id="school" name="fi-text-school" placeholder="e.g. Islington College">
             <div class="error-msg">Please enter this field.</div>
           </div>
           <div class="field">
             <label for="course">Course / field of study <span class="opt">(optional)</span></label>
-            <input type="text" id="course" name="course" placeholder="e.g. BSc (Hons) Computing">
+            <input type="text" id="course" name="fi-text-course" placeholder="e.g. BSc (Hons) Computing">
           </div>
         </div>
 
         <div class="field">
           <label for="occupation">Current occupation <span class="opt">(optional)</span></label>
-          <input type="text" id="occupation" name="occupation" placeholder="e.g. Student">
+          <input type="text" id="occupation" name="fi-text-occupation" placeholder="e.g. Student">
         </div>
       </div>
     </div>
@@ -466,26 +466,26 @@
         <div class="field" data-required>
           <label>Areas of interest<span class="req">*</span> <span class="opt">— choose at least one</span></label>
           <div class="choice-grid" id="interestGrid">
-            <div class="pill"><input type="checkbox" id="int-it" name="interests" value="IT"><label class="pill-label" for="int-it">IT &amp; Tech</label></div>
-            <div class="pill"><input type="checkbox" id="int-design" name="interests" value="Design"><label class="pill-label" for="int-design">Design</label></div>
-            <div class="pill"><input type="checkbox" id="int-events" name="interests" value="Events"><label class="pill-label" for="int-events">Events</label></div>
-            <div class="pill"><input type="checkbox" id="int-service" name="interests" value="Community Service"><label class="pill-label" for="int-service">Community Service</label></div>
-            <div class="pill"><input type="checkbox" id="int-speaking" name="interests" value="Public Speaking"><label class="pill-label" for="int-speaking">Public Speaking</label></div>
-            <div class="pill"><input type="checkbox" id="int-marketing" name="interests" value="Marketing"><label class="pill-label" for="int-marketing">Marketing</label></div>
-            <div class="pill"><input type="checkbox" id="int-photo" name="interests" value="Photography"><label class="pill-label" for="int-photo">Photography</label></div>
-            <div class="pill"><input type="checkbox" id="int-finance" name="interests" value="Finance"><label class="pill-label" for="int-finance">Finance</label></div>
+            <div class="pill"><input type="checkbox" id="int-it" name="fi-checkbox-interests" value="IT"><label class="pill-label" for="int-it">IT &amp; Tech</label></div>
+            <div class="pill"><input type="checkbox" id="int-design" name="fi-checkbox-interests" value="Design"><label class="pill-label" for="int-design">Design</label></div>
+            <div class="pill"><input type="checkbox" id="int-events" name="fi-checkbox-interests" value="Events"><label class="pill-label" for="int-events">Events</label></div>
+            <div class="pill"><input type="checkbox" id="int-service" name="fi-checkbox-interests" value="Community Service"><label class="pill-label" for="int-service">Community Service</label></div>
+            <div class="pill"><input type="checkbox" id="int-speaking" name="fi-checkbox-interests" value="Public Speaking"><label class="pill-label" for="int-speaking">Public Speaking</label></div>
+            <div class="pill"><input type="checkbox" id="int-marketing" name="fi-checkbox-interests" value="Marketing"><label class="pill-label" for="int-marketing">Marketing</label></div>
+            <div class="pill"><input type="checkbox" id="int-photo" name="fi-checkbox-interests" value="Photography"><label class="pill-label" for="int-photo">Photography</label></div>
+            <div class="pill"><input type="checkbox" id="int-finance" name="fi-checkbox-interests" value="Finance"><label class="pill-label" for="int-finance">Finance</label></div>
           </div>
           <div class="error-msg">Please choose at least one area.</div>
         </div>
 
         <div class="field">
           <label for="skills">Skills / talents <span class="opt">(optional)</span></label>
-          <textarea id="skills" name="skills" placeholder="Anything from photography to public speaking to spreadsheets — tell us what you're good at."></textarea>
+          <textarea id="skills" name="fi-text-skills" placeholder="Anything from photography to public speaking to spreadsheets — tell us what you're good at."></textarea>
         </div>
 
         <div class="field">
           <label for="volunteering">Previous volunteering experience <span class="opt">(optional)</span></label>
-          <textarea id="volunteering" name="volunteering" placeholder="Clubs, causes, or events you've helped with before."></textarea>
+          <textarea id="volunteering" name="fi-text-volunteering" placeholder="Clubs, causes, or events you've helped with before."></textarea>
         </div>
       </div>
     </div>
@@ -500,18 +500,18 @@
         <div class="field-row">
           <div class="field" data-required>
             <label for="emName">Contact name<span class="req">*</span></label>
-            <input type="text" id="emName" name="emName" placeholder="Full name">
+            <input type="text" id="emName" name="fi-text-emName" placeholder="Full name">
             <div class="error-msg">Please enter a name.</div>
           </div>
           <div class="field" data-required>
             <label for="emRelation">Relationship<span class="req">*</span></label>
-            <input type="text" id="emRelation" name="emRelation" placeholder="e.g. Parent, sibling, friend">
+            <input type="text" id="emRelation" name="fi-text-emRelation" placeholder="e.g. Parent, sibling, friend">
             <div class="error-msg">Please enter a relationship.</div>
           </div>
         </div>
         <div class="field" data-required>
           <label for="emPhone">Contact number<span class="req">*</span></label>
-          <input type="tel" id="emPhone" name="emPhone" placeholder="98XXXXXXXX">
+          <input type="tel" id="emPhone" name="fi-text-emPhone" placeholder="98XXXXXXXX">
           <div class="error-msg">Please enter a valid phone number.</div>
         </div>
       </div>
@@ -537,13 +537,13 @@
 
         <div class="field">
             <label for="payRef">Transaction ID / reference <span class="opt">(optional)</span></label>
-          <input type="text" id="payRef" name="payRef" placeholder="From your payment app's confirmation screen">
+          <input type="text" id="payRef" name="fi-text-payRef" placeholder="From your payment app's confirmation screen">
         </div>
 
         <div class="field" data-required>
           <label for="paymentProof">Payment screenshot<span class="req">*</span></label>
           <div class="photo-drop" id="paymentDrop">
-            <input type="file" id="paymentProof" name="payment_screenshot" accept="image/*">
+            <input type="file" id="paymentProof" name="fi-file-payment_screenshot" accept="image/*">
             <div class="hint">Click to upload your payment confirmation screenshot</div>
             <div class="fname" id="paymentName"></div>
           </div>
@@ -560,7 +560,7 @@
         <p class="station-desc">Last bit — read it over, sign your name, and you're officially in the running.</p>
 
         <div class="declare-box">
-          <input type="checkbox" id="declareAgree" name="declareAgree">
+          <input type="checkbox" id="declareAgree" name="fi-checkbox-declareAgree">
           <p>I confirm that the information provided above is accurate and agree to abide by the values, rules, and code of conduct of LEO Club Kathmandu Indra Annapurna.</p>
         </div>
         <div class="field" data-required id="declareField">
@@ -570,12 +570,12 @@
         <div class="field-row">
           <div class="field" data-required>
             <label for="signature">Digital signature (type your full name)<span class="req">*</span></label>
-            <input type="text" id="signature" name="signature" placeholder="Type your full name">
+            <input type="text" id="signature" name="fi-text-signature" placeholder="Type your full name">
             <div class="error-msg">Please type your name as a signature.</div>
           </div>
           <div class="field" data-required>
             <label for="signDate">Date<span class="req">*</span></label>
-            <input type="date" id="signDate" name="signDate">
+            <input type="date" id="signDate" name="fi-date-signDate">
             <div class="error-msg">Please select a date.</div>
           </div>
         </div>
@@ -671,7 +671,7 @@
       let message = null;
 
       if (fieldEl.id === 'interestGrid' || fieldEl.querySelector('#interestGrid')) {
-        fieldValid = validateGroup('interests');
+        fieldValid = validateGroup('fi-checkbox-interests');
       } else if (fieldEl.id === 'declareField') {
         fieldValid = document.getElementById('declareAgree').checked;
       } else if (fileControl) {
@@ -731,20 +731,27 @@
       return;
     }
 
-    // ---- send via Google Apps Script + Gmail to leoindraannapurna@gmail.com ----
-    // 1. Deploy the companion Apps Script (see setup instructions) tied to the
-    //    leoindraannapurna@gmail.com Google account.
-    // 2. Paste the deployment's Web App URL below, replacing the placeholder.
-    const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxRFAck-v-pdC7IgNFyJPFShMpLd7PFSYctzvZ6y71SuHN1zwRP1qadGpWoBG5tln9ssQ/exec";
+    // ---- send via Forminit to leoindraannapurna@gmail.com ----
+    // 1. Sign up free at https://forminit.com and create a form.
+    // 2. In the form's dashboard, set up Email Notifications to
+    //    leoindraannapurna@gmail.com (Form Settings > Email Notifications).
+    // 3. Copy your Form ID (shown in the dashboard / form URL).
+    // 4. Paste it below, replacing the placeholder.
+    const FORMINIT_FORM_ID = "m836hki1m2h";
 
     submitBtn.disabled = true;
     submitBtn.textContent = "Sending…";
 
     (async () => {
       try {
-        const fd = new FormData(form); // includes the payment screenshot file automatically
+        // Real multipart FormData — Forminit handles file uploads natively,
+        // no base64 conversion or custom backend needed.
+        const fd = new FormData(form);
 
-        const res = await fetch(SCRIPT_URL, { method: 'POST', body: fd });
+        const res = await fetch(`https://forminit.com/f/${FORMINIT_FORM_ID}`, {
+          method: 'POST',
+          body: fd
+        });
         const data = await res.json().catch(() => ({}));
 
         if (res.ok && data.success) {
