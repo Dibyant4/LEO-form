@@ -599,6 +599,7 @@
 
 <footer>LEO Club Kathmandu Indra Annapurna &nbsp;·&nbsp; L.Y. 2026&ndash;2027 &nbsp;·&nbsp; Serve Boldly. Lead Beyond.</footer>
 
+<script src="https://forminit.com/sdk/v1/forminit.js"></script>
 <script>
   // ---- file pickers ----
   const MAX_FILE_BYTES = 5 * 1024 * 1024; // 5MB — matches the Web3Forms free-tier limit
@@ -738,6 +739,7 @@
     // 3. Copy your Form ID (shown in the dashboard / form URL).
     // 4. Paste it below, replacing the placeholder.
     const FORMINIT_FORM_ID = "m836hki1m2h";
+    const forminit = new Forminit();
 
     submitBtn.disabled = true;
     submitBtn.textContent = "Sending…";
@@ -748,20 +750,16 @@
         // no base64 conversion or custom backend needed.
         const fd = new FormData(form);
 
-        const res = await fetch(`https://forminit.com/f/${FORMINIT_FORM_ID}`, {
-          method: 'POST',
-          body: fd
-        });
-        const data = await res.json().catch(() => ({}));
+        const { data, error } = await forminit.submit(FORMINIT_FORM_ID, fd);
 
-        if (res.ok && data.success) {
+        if (!error) {
           form.style.display = 'none';
           successScreen.classList.add('show');
           const ref = 'LEO-' + Math.random().toString(36).substring(2,7).toUpperCase();
           document.getElementById('refCode').textContent = 'Reference: ' + ref;
           window.scrollTo({top:0, behavior:'smooth'});
         } else {
-          console.error('Submission error:', data);
+          console.error('Submission error:', error);
           submitError.style.display = 'block';
           submitBtn.disabled = false;
           submitBtn.textContent = "Submit application";
